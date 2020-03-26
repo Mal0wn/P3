@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Montserrat';
+    src:url('./web_fonts/Montserrat-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body,
+.header,
+.main_container,
+.soon,
+.footer,
+.navlogo,
+.btn_foot, 
+.btn_soon
+ {
+    display: flex;
+}
+
+body {
+    font-family: "Montserrat";
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    font-size: 2.5em;
+}
+
+
+.navlogo {
+   margin: auto;
+   background-position: center;
+   justify-content: center;
+
+   
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+
+
+.header {
+     background-color: #579C87 ;
+     max-height: 100px;
+}
+
+.btn_foot {
+    background-color: #579C87 ;
+    color:#FDCB46 ;
+    text-decoration: none; 
+    
+    
+}
+
+.footer,
+.soon {
+    justify-content: center; 
+}
+
+.footer {
+    margin-top: 50px;
+    max-width: 1000px;
+    background-color:#579C87;
+    padding: 20px 10px 20px 10px;
+    justify-content: space-around;
+}
+
+.btn_soon {
+    padding : 20px 70px 20px 70px;
+    background-color: #579C87;
+    color: #FDCB46; 
+    border-radius: 20px; 
+    margin-top: 50px;
+}
+
+@keyframes wiggle {
+  20%  { transform: translateX(15px);  }
+  40%  { transform: translateX(-15px); }
+  60%  { transform: translateX(2px);  }
+  80%  { transform: translateX(-1px); }
+  100% { transform: translateX(0);    }
+}
+
+.btn_foot:hover {
+  animation: wiggle 1s ease;
+  animation-iteration-count: 10;
+}
