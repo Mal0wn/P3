@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Montserrat';
+    src:url('./web_fonts/Montserrat-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src:url('./web_fonts/Pacifico-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Itim';
+    src:url('./web_fonts/Itim-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+/*.........................................................................................*/
+
+body,
+.header,
+.footer,
+.btn_foot, 
+.menulapalette,
+.menulechic,
+.menuledelice,
+.menulanote,
+.navlogo,
+.prelude_contain,
+.price_prelude,
+.pointdorgue_contain,
+.price_pointdorgue,
+.mouvmtfinal_contain,
+.flex_prelude,
+.flex_pointdorgue,
+img
+{
+    display: flex;
+}
+
+
+body {
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+.header {
+     background-color: #579C87 ;
+     max-height: 100px;
+}
+
+.navlogo {
+   margin: auto;
+   background-position: center;
+   justify-content: center;
+   padding-top: 20px;
+   padding-bottom: 15px;
+}
+
+
+.btn_foot {
+    background-color: #579C87 ;
+    color:#FDCB46 ;
+    text-decoration: none; 
+}
+
+.footer {
+	font-family: Montserrat;
+    max-width: 1000px;
+    background-color:#579C87;
+    padding: 20px 10px 20px 10px;
+    justify-content: space-around;
+     font-size: 2.5em;
+}
+
+
+
+
+
+.menulapalette,
+.menulechic,
+.menuledelice,
+.menulanote {
+  flex-direction: column;
+  max-width: 1000px;
+}
+
+
+/*................................................................................................*/
+ 
+/*Animation Footer*/
+@keyframes wiggle {
+  20%  { transform: translateX(15px);  }
+  40%  { transform: translateX(-15px); }
+  60%  { transform: translateX(10px);  }
+  80%  { transform: translateX(-10px); }
+  100% { transform: translateX(0);     }
+}
+
+.btn_foot:hover {
+  animation: wiggle 0.5s ease;
+  animation-iteration-count: 1;
+}
+
+/*................................................................................................*/
+
+
+/* Menu la note enchanté*/
+
+.menulanote {
+	background-color: #FCDFDB;
+	color: #3D1319;
+	padding: 50px 20px 50px 20px;
+	font-size: 1.5em;
+  font-family: Itim;
+}
+
+h2,h3,h4,.fas.fa-music,.ne_final {
+  text-align: center;
+}
+
+.prelude_contain,
+.pointdorgue_contain,
+.mouvmtfinal_contain {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.price_prelude,
+.price_pointdorgue {
+  flex-direction: column;
+  text-align: right;
+  min-width: 100px;
+  max-width: 150px;
+  
+}
+
+.prelude_contain .price_prelude {
+  justify-content: flex-end;
+}
+
+.flex_prelude,
+.flex_pointdorgue {
+  flex-direction: row;
+}
+
+.fas.fa-music {
+  font-size: 3em;
+  background: -webkit-linear-gradient(#F05160, #F6916A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ne_final .fas.fa-music {
+  font-size: 2em;
+}
+
+.ne_final {
+  padding-top: 30px;
+
+}
+
+.title_menu_ne {
+  font-family: Pacifico;
+}

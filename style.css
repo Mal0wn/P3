@@ -79,7 +79,7 @@ body {
     background-color:#579C87;
     padding: 20px 10px 20px 10px;
     justify-content: space-around;
-   
+
 }
 
 .btn_soon {
@@ -150,8 +150,8 @@ justify-content: space-around; }
 }
 
 /* animation qui fonctionne pas :'( */
-.btn_soon:hover { 
+.btn_soon:hover span { 
    
   animation: bounce 0.5s ease;
-  animation-iteration-count: 1;
+  animation-iteration-count: 10;
 }
