@@ -112,7 +112,8 @@ body,
 .flex_esquisse,
 .flex_oeuvredm,
 .flex_sommetdelart,
-img
+img,
+h3
 {
     display: flex;
 }
@@ -123,6 +124,17 @@ body {
     max-width: 1000px;
     margin: auto;
     
+}
+
+h3 img {
+  max-width: 250px;
+}
+
+h3 {
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .header {
@@ -147,11 +159,14 @@ body {
 
 .footer {
 	font-family: Montserrat;
-    max-width: 1000px;
+    width: 1000px;
     background-color:#579C87;
     padding: 20px 10px 20px 10px;
     justify-content: space-around;
-     font-size: 2.5em;
+    font-size: 2.5em;
+    position: fixed;
+    bottom: 0
+
 }
 
 
@@ -164,6 +179,13 @@ body {
 .menulanote {
   flex-direction: column;
   max-width: 1000px;
+}
+
+.sommetdelart,
+.ne_final,
+.gourm-sucre,
+.pbt {
+  margin-bottom: 150px;
 }
 
 
@@ -230,7 +252,7 @@ h2,h3,h4,.fas.fa-music,.ne_final {
 
 .fas.fa-music {
   font-size: 3em;
-  background: -webkit-linear-gradient(#F05160, #F6916A);
+  background: -webkit-linear-gradient( 0.40turn,#F05160, #F6916A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -261,7 +283,7 @@ h2,h3,h4,.fas.fa-music,.ne_final {
 .menulechic {
   background-color: #FFF5FE;
   padding: 50px 20px 50px 20px;
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: Martel;
 }
 
@@ -300,13 +322,13 @@ h2,h3 {
 
 .title_menu_cf {
   font-size: 2.1em;
-  background: -webkit-linear-gradient(#C67412, #8F5BFE);
+  background: -webkit-linear-gradient(0.40turn ,#8F5BFE, #C67412);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .psmeap {
-  color: #8F5BFE;
+  color: #C77412;
 }
 
 .pdp {
@@ -366,7 +388,7 @@ h2,h3 {
 .title_menu_ddp {
   font-family: GreatVibes;
   font-size: 3em;
-  background: -webkit-linear-gradient(#022DDF, #0889FB);
+  background: -webkit-linear-gradient(0.40turn,#0889FB, #022DDF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -423,7 +445,7 @@ h2,h3 {
 .title_menu_pg {
   font-family: KaushanScript;
   font-size: 3em;
-  background: -webkit-linear-gradient(#41963C, #BEFF7F);
+  background: -webkit-linear-gradient(0.4turn,#BEFF7F, #41963C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

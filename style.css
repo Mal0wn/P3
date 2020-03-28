@@ -74,11 +74,13 @@ body {
 }
 
 .footer {
-    margin-top: 50px;
-    max-width: 1000px;
+    margin-top: 200px;
+    width: 1000px;
     background-color:#579C87;
     padding: 20px 10px 20px 10px;
     justify-content: space-around;
+    position: fixed;
+    bottom: 0
 
 }
 
@@ -93,6 +95,7 @@ body {
 .main_container {
   flex-direction: column;
   max-width: 1000px;
+  padding-bottom: 150px;
 }
 
 .pic_bottom { 
