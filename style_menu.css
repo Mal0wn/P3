@@ -25,6 +25,47 @@
 
 }
 
+@font-face {
+    font-family: 'Martel';
+    src:url('./web_fonts/Martel-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Merienda';
+    src:url('./web_fonts/Merienda-Regular.ttf') format('truetype');
+    src:url('./web_fonts/Merienda-Bold.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'GreatVibes';
+    src:url('./web_fonts/GreatVibes-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Kalam';
+    src:url('./web_fonts/Kalam-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'KaushanScript';
+    src:url('./web_fonts/KaushanScript-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 
@@ -40,12 +81,37 @@ body,
 .menulanote,
 .navlogo,
 .prelude_contain,
-.price_prelude,
 .pointdorgue_contain,
-.price_pointdorgue,
 .mouvmtfinal_contain,
+.psmeap_contain,
+.gourm-sucre_contain,
+.pbc_contain,
+.pdp_contain,
+.pbct_contain,
+.pbt_contain,
+.oeuvredm_contain,
+.esquisse_contain,
+.sommetdelart_contain,
+.price_prelude,
+.price_psmeap,
+.price_pdp,
+.price_pointdorgue,
+.price_pbc,
+.price_pbct,
+.price_pbt,
+.price_esquisse,
+.price_oeuvredm,
+.price_sommetdelart,
 .flex_prelude,
 .flex_pointdorgue,
+.flex_pdp,
+.flex_psmeap,
+.flex_pbc,
+.flex_pbct,
+.flex_pbt,
+.flex_esquisse,
+.flex_oeuvredm,
+.flex_sommetdelart,
 img
 {
     display: flex;
@@ -126,7 +192,7 @@ body {
 	background-color: #FCDFDB;
 	color: #3D1319;
 	padding: 50px 20px 50px 20px;
-	font-size: 1.5em;
+	font-size: 1.4em;
   font-family: Itim;
 }
 
@@ -148,6 +214,7 @@ h2,h3,h4,.fas.fa-music,.ne_final {
   text-align: right;
   min-width: 100px;
   max-width: 150px;
+  padding-right: 40px;
   
 }
 
@@ -158,6 +225,7 @@ h2,h3,h4,.fas.fa-music,.ne_final {
 .flex_prelude,
 .flex_pointdorgue {
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .fas.fa-music {
@@ -178,4 +246,186 @@ h2,h3,h4,.fas.fa-music,.ne_final {
 
 .title_menu_ne {
   font-family: Pacifico;
+
 }
+
+
+/*.......................................................................................................*/
+
+/* Menu le Chic */
+
+.title_menu_cf {
+  font-family: Merienda;
+}
+
+.menulechic {
+  background-color: #FFF5FE;
+  padding: 50px 20px 50px 20px;
+  font-size: 1em;
+  font-family: Martel;
+}
+
+h2,h3 {
+  text-align: center;
+}
+
+.psmeap_contain,
+.pdp_contain,
+.gourm-sucre_contain {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.price_psmeap,
+.price_pdp
+ {
+  flex-direction: column;
+  text-align: right;
+  min-width: 100px;
+  max-width: 150px;
+  padding-right: 40px;
+  
+}
+
+.psmeap_contain .price_psmeap {
+  justify-content: flex-end;
+}
+
+.flex_psmeap,
+.flex_pdp {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title_menu_cf {
+  font-size: 2.1em;
+  background: -webkit-linear-gradient(#C67412, #8F5BFE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.psmeap {
+  color: #8F5BFE;
+}
+
+.pdp {
+  color: #A56799;
+}
+
+.gourm-sucre {
+  color: #6E4CCC;
+}
+
+
+
+/*.......................................................................................................*/
+
+/* Menu le Delice */
+
+
+.menuledelice {
+  background-color: #EDEFEF;
+  color: black ;
+  padding: 50px 20px 50px 20px;
+  font-size: 1.5em;
+  font-family: Kalam;
+}
+
+
+.pbc_contain,
+.pbct_contain,
+.pbt_contain {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.price_pbc,
+.price_pbct,
+.price_pbt {
+  flex-direction: column;
+  text-align: right;
+  min-width: 100px;
+  max-width: 150px;
+  padding-right: 50px;
+  
+}
+
+.pbc_contain .price_pbc {
+  justify-content: flex-end;
+}
+
+.flex_pbc,
+.flex_pbct,
+.flex_pbt {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title_menu_ddp {
+  font-family: GreatVibes;
+  font-size: 3em;
+  background: -webkit-linear-gradient(#022DDF, #0889FB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/*.......................................................................................................*/
+
+/* Menu la Palette */
+
+
+.menulapalette {
+  background-color: #FDFFFD;
+  color: black ;
+  padding: 50px 20px 50px 20px;
+  font-size: 1.5em;
+  font-family: Kalam;
+}
+
+
+
+.esquisse_contain,
+.oeuvredm_contain,
+.sommetdelart_contain {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.price_esquisse,
+.price_oeuvredm,
+.price_sommetdelart {
+  flex-direction: column;
+  text-align: right;
+  min-width: 50px;
+  max-width: 100px;
+  padding-right: 20px;
+  
+}
+
+.esquisse_contain .price_esquisse,
+.oeuvredm_contain .price_oeuvredm,
+.sommetdelart_contain .price_sommetdelart {
+  justify-content: flex-end;
+}
+
+.flex_esquisse,
+.flex_oeuvredm,
+.flex_sommetdelart {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title_menu_pg {
+  font-family: KaushanScript;
+  font-size: 3em;
+  background: -webkit-linear-gradient(#41963C, #BEFF7F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
