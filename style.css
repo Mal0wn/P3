@@ -7,6 +7,70 @@
 
 }
 
+@font-face {
+    font-family: 'Pacifico';
+    src:url('./web_fonts/Pacifico-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Itim';
+    src:url('./web_fonts/Itim-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Martel';
+    src:url('./web_fonts/Martel-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Merienda';
+    src:url('./web_fonts/Merienda-Regular.ttf') format('truetype');
+    src:url('./web_fonts/Merienda-Bold.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'GreatVibes';
+    src:url('./web_fonts/GreatVibes-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Kalam';
+    src:url('./web_fonts/Kalam-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'KaushanScript';
+    src:url('./web_fonts/KaushanScript-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+
 body,
 .header,
 .main_container,
@@ -23,7 +87,44 @@ body,
 .mentions,
 .container-dots,
 img,
-span
+span, 
+.menulapalette,
+.menulechic,
+.menuledelice,
+.menulanote,
+.prelude_contain,
+.pointdorgue_contain,
+.mouvmtfinal_contain,
+.psmeap_contain,
+.gourm-sucre_contain,
+.pbc_contain,
+.pdp_contain,
+.pbct_contain,
+.pbt_contain,
+.oeuvredm_contain,
+.esquisse_contain,
+.sommetdelart_contain,
+.price_prelude,
+.price_psmeap,
+.price_pdp,
+.price_pointdorgue,
+.price_pbc,
+.price_pbct,
+.price_pbt,
+.price_esquisse,
+.price_oeuvredm,
+.price_sommetdelart,
+.flex_prelude,
+.flex_pointdorgue,
+.flex_pdp,
+.flex_psmeap,
+.flex_pbc,
+.flex_pbct,
+.flex_pbt,
+.flex_esquisse,
+.flex_oeuvredm,
+.flex_sommetdelart,
+h3
  {
     display: flex;
 }
@@ -32,24 +133,31 @@ body {
     font-family: "Montserrat";
     flex-direction: column;
     justify-content: center;
-    max-width: 1000px;
+    width: 1000px;
     margin: auto;
     font-size: 2.5em;
 }
 
 .pic_top img {
-  max-width: 85%;
+  max-width: 100%;
   justify-content: center;
-  margin : 20px 20px 20px 30px;
+  align-items: center;
   border:1px solid #B0BEC5;
   border-radius: 10px;
   
 }
 
 .pic_bottom img {
-  max-width: 85%;
+  max-width: 100%;
   justify-content: center;
-  margin : 20px 20px 20px 30px;
+  align-items: center;
+  border:1px solid #B0BEC5;
+  border-radius: 10px;
+  
+}
+
+.scale {
+  margin: 20px 20px 20px 20px;
   border:1px solid #B0BEC5;
   border-radius: 10px;
   
@@ -172,8 +280,305 @@ justify-content: space-around; }
     display:none;
 }
 
+h3 img {
+  max-width: 250px;
+}
 
-/*Animation*/
+
+h3 {
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+
+.menulapalette,
+.menulechic,
+.menuledelice,
+.menulanote {
+  flex-direction: column;
+  max-width: 1000px;
+
+}
+
+.sommetdelart,
+.ne_final,
+.gourm-sucre,
+.pbt {
+  margin-bottom: 150px;
+}
+
+/*.....................................................................................*/
+                               /* Menu la note enchanté*/
+/*.....................................................................................*/
+
+.menulanote {
+  background-color: #FCDFDB;
+  color: #3D1319;
+  padding: 50px 20px 50px 20px;
+  font-size: 0.5em;
+  font-family: Itim;
+}
+
+h2,h3,h4,.fas.fa-music,.ne_final {
+  text-align: center;
+}
+
+.prelude_contain,
+.pointdorgue_contain,
+.mouvmtfinal_contain {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.price_prelude,
+.price_pointdorgue {
+  flex-direction: column;
+  text-align: right;
+  min-width: 100px;
+  max-width: 150px;
+  padding-right: 40px;
+  
+}
+
+.prelude_contain .price_prelude {
+  justify-content: flex-end;
+}
+
+.flex_prelude,
+.flex_pointdorgue {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fas.fa-music {
+  font-size: 3em;
+  background: -webkit-linear-gradient( 0.40turn,#F05160, #F6916A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ne_final .fas.fa-music {
+  font-size: 2em;
+}
+
+.ne_final {
+  padding-top: 30px;
+
+}
+
+.title_menu_ne {
+  font-family: Pacifico;
+
+}
+
+
+/*.....................................................................................*/
+                           /* Menu le chic a la française*/
+/*.....................................................................................*/
+
+
+
+.title_menu_cf {
+  font-family: Merienda;
+}
+
+.menulechic {
+  background-color: #FFF5FE;
+  padding: 50px 20px 50px 20px;
+  font-size:0.5em;
+  font-family: Martel;
+}
+
+
+.psmeap_contain,
+.pdp_contain,
+.gourm-sucre_contain {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.price_psmeap,
+.price_pdp
+ {
+  flex-direction: column;
+  text-align: right;
+  min-width: 100px;
+  max-width: 150px;
+  padding-right: 40px;
+  
+}
+
+.psmeap_contain .price_psmeap {
+  justify-content: flex-end;
+}
+
+.flex_psmeap,
+.flex_pdp {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title_menu_cf {
+  font-size: 2.1em;
+  background: -webkit-linear-gradient(0.40turn ,#8F5BFE, #C67412);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.psmeap {
+  color: #C77412;
+}
+
+.pdp {
+  color: #A56799;
+}
+
+.gourm-sucre {
+  color: #6E4CCC;
+}
+
+
+
+/*.....................................................................................*/
+                            /* Menu le delice des papilles*/
+/*.....................................................................................*/
+
+
+.menuledelice {
+  background-color: #EDEFEF;
+  color: black ;
+  padding: 50px 20px 50px 20px;
+  font-size: 0.5em;
+  font-family: Kalam;
+}
+
+
+.pbc_contain,
+.pbct_contain,
+.pbt_contain {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.price_pbc,
+.price_pbct,
+.price_pbt {
+  flex-direction: column;
+  text-align: right;
+  min-width: 100px;
+  max-width: 150px;
+  padding-right: 50px;
+  
+}
+
+.pbc_contain .price_pbc {
+  justify-content: flex-end;
+}
+
+.flex_pbc,
+.flex_pbct,
+.flex_pbt {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title_menu_ddp {
+  font-family: GreatVibes;
+  font-size: 3em;
+  background: -webkit-linear-gradient(0.40turn,#0889FB, #022DDF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/*.....................................................................................*/
+                               /* Menu la palette des gouts*/
+/*.....................................................................................*/
+
+
+.menulapalette {
+  background-color: #FDFFFD;
+  color: black ;
+  padding: 50px 20px 50px 20px;
+  font-size: 0.5em;
+  font-family: Kalam;
+}
+
+
+
+.esquisse_contain,
+.oeuvredm_contain,
+.sommetdelart_contain {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.price_esquisse,
+.price_oeuvredm,
+.price_sommetdelart {
+  flex-direction: column;
+  text-align: right;
+  min-width: 50px;
+  max-width: 100px;
+  padding-right: 20px;
+  
+}
+
+.esquisse_contain .price_esquisse,
+.oeuvredm_contain .price_oeuvredm,
+.sommetdelart_contain .price_sommetdelart {
+  justify-content: flex-end;
+}
+
+.flex_esquisse,
+.flex_oeuvredm,
+.flex_sommetdelart {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title_menu_pg {
+  font-family: KaushanScript;
+  font-size: 3em;
+  background: -webkit-linear-gradient(0.4turn,#BEFF7F, #41963C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/*......................................................................................................................*/
+                                               /*ANIM*/
+/*......................................................................................................................*/
+
+/*...........................................................................................................*/
+                                     /* Anim soulignement texte */
+/*...........................................................................................................*/
+
+
+.title {
+  color:inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(61,150,111,0.5 ) 0%, rgba(61,150,111,0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.3s;
+}
+
+.title:hover {
+  background-size: 100% 100%
+}
+
+
+
+/*Animation Wiggle & Bounce*/
+
 
 @keyframes wiggle {
   20%  { transform: translateX(15px);  }
@@ -189,14 +594,17 @@ justify-content: space-around; }
 }
 
 
-
-/* Anim Footer */
+/*...........................................................................................................*/
+                                            /* Anim Footer */
+/*...........................................................................................................*/
 .btn_foot:hover {
   animation: wiggle 0.5s ease;
   animation-iteration-count: 1;
 }
 
-/* animation qui fonctionne pas :'( */
+/*...........................................................................................................*/
+                                           /* Anim btn soon  */
+/*...........................................................................................................*/
 
 .dot1{
   animation: bounce 1s ease;
@@ -215,5 +623,19 @@ justify-content: space-around; }
 }
 
 
+/*...........................................................................................................*/
+                                       /*Anim Zoom menu*/
+/*...........................................................................................................*/
+ 
+.scale {
+  overflow: hidden;
+  position: relative;
+}
 
 
+.scale:hover  img  {
+    -moz-transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    transform: scale(1.09);
+    opacity: 0.5;
+  }
