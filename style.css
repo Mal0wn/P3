@@ -598,7 +598,7 @@ h2,h3,h4,.fas.fa-music,.ne_final {
                                             /* Anim Footer */
 /*...........................................................................................................*/
 .btn_foot:hover {
-  animation: wiggle 0.5s ease;
+  animation: wiggle 0.2s ease;
   animation-iteration-count: 1;
 }
 
