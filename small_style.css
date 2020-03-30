@@ -124,23 +124,35 @@ span,
 .flex_esquisse,
 .flex_oeuvredm,
 .flex_sommetdelart,
+.title_pointdorgue,
+.title_mouvmtfinal,
+.title_prelude,
+.title_esquisse,
+.title_oeuvredm,
+.title_sommetdelart,
+.title_psmeap,
+.title_pdp,
+.title_gourm-sucre,
+.title_pbc,
+.title_pbct,
+.title_pbt,
 h3
  {
     display: flex;
 }
+/*..................................................................*/
 
 
-.pricesmart {
-  display: none;
-}
 
 body {
     font-family: "Montserrat";
     flex-direction: column;
     justify-content: center;
-    width: 1000px;
+    min-width: 300px;
+    max-width: 780px;
+    width: 100%;
     margin: auto;
-    font-size: 2.5em;
+    font-size: 1em;
 }
 
 .pic_top img {
@@ -178,8 +190,10 @@ body {
 
 .header {
      background-color: #579C87 ;
-     max-height: 100px;
-     width: 1000px;
+     max-height: 200px;
+     min-width:300px;
+     max-width:780px;
+     width: 100%;
 }
 
 .btn_foot {
@@ -194,13 +208,16 @@ body {
 }
 
 .footer {
+    width: 100%;
     margin-top: 200px;
-    width: 1000px;
+    min-width: 300px;
+    max-width: 780px;
     background-color:#579C87;
     padding: 20px 0px 20px 0px;
     justify-content: space-around;
     position: fixed;
-    bottom: 0
+    bottom: 0;
+    font-size: 1em;
 
 }
 
@@ -232,7 +249,8 @@ body {
 
 .main_container {
   flex-direction: column;
-  max-width: 1000px;
+  min-width: 781px;
+  max-width: 1100px;
   padding-bottom: 150px;
 }
 
@@ -256,7 +274,9 @@ justify-content: space-around; }
   text-align: justify;
   margin:auto;
   flex-direction: column;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .container-dots span {
@@ -284,9 +304,27 @@ justify-content: space-around; }
 .btn_soon:hover .text-base {
     display:none;
 }
+/*......................................*/
+
+.prelude_contain,
+.pointdorgue_contain,
+.mouvmtfinal_contain,
+.psmeap_contain,
+.gourm-sucre_contain,
+.pbc_contain,
+.pdp_contain,
+.pbct_contain,
+.pbt_contain {
+  flex-direction: column;
+}
+
+
 
 h3 img {
   max-width: 250px;
+  min-width: 50px;
+  width: 45%;
+  justify-content: space-between;
 }
 
 
@@ -304,8 +342,18 @@ h3 {
 .menuledelice,
 .menulanote {
   flex-direction: column;
-  max-width: 1000px;
+  min-width: 300px;
+  max-width: 780px;
+  width: 100%;
+  margin: auto;
 
+}
+
+body {
+  min-width: 300px;
+  max-width: 780px;
+  width: 100%;
+  margin: auto;
 }
 
 .sommetdelart,
@@ -315,6 +363,43 @@ h3 {
   margin-bottom: 150px;
 }
 
+.flex_prelude,
+.flex_pointdorgue,
+.flex_pdp,
+.flex_psmeap,
+.flex_pbc,
+.flex_pbct,
+.flex_pbt,
+.flex_esquisse,
+.flex_oeuvredm,
+.flex_sommetdelart {
+  align-items: center;
+}
+
+.title_pointdorgue,
+.title_mouvmtfinal,
+.title_prelude,
+.title_esquisse,
+.title_oeuvredm,
+.title_sommetdelart,
+.title_psmeap,
+.title_pdp,
+.title_gourm-sucre,
+.title_pbc,
+.title_pbct,
+.title_pbt {
+  justify-content: space-around;
+  text-align: justify ;
+  font-size: 1em;
+}
+
+p {
+  text-align: center;
+}
+
+.pricesmart {
+  text-align: center;
+}
 /*.....................................................................................*/
                                /* Menu la note enchanté*/
 /*.....................................................................................*/
@@ -322,62 +407,47 @@ h3 {
 .menulanote {
   background-color: #FCDFDB;
   color: #3D1319;
-  padding: 50px 20px 50px 20px;
-  font-size: 0.5em;
+  width: 100%;
+  font-size: 0.7em;
   font-family: Itim;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 h2,h3,h4,.fas.fa-music,.ne_final {
   text-align: center;
+  font-size: 1em;
 }
 
-.prelude_contain,
-.pointdorgue_contain,
-.mouvmtfinal_contain {
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 50px;
-}
 
 .price_prelude,
 .price_pointdorgue {
-  flex-direction: column;
-  text-align: right;
-  min-width: 100px;
-  max-width: 150px;
-  padding-right: 40px;
+  display: none;
   
 }
 
-.prelude_contain .price_prelude {
-  justify-content: flex-end;
-}
 
-.flex_prelude,
-.flex_pointdorgue {
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 
 .fas.fa-music {
-  font-size: 3em;
+  font-size: 2em;
   background: -webkit-linear-gradient( 0.40turn,#F05160, #F6916A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .ne_final .fas.fa-music {
-  font-size: 2em;
+  font-size: 0.9em;
 }
 
 .ne_final {
   padding-top: 30px;
-
+  font-size: 1em;
 }
 
 .title_menu_ne {
   font-family: Pacifico;
-
+  font-size: 1em;
 }
 
 
@@ -394,42 +464,22 @@ h2,h3,h4,.fas.fa-music,.ne_final {
 .menulechic {
   background-color: #FFF5FE;
   padding: 50px 20px 50px 20px;
-  font-size:0.5em;
+  font-size:1em;
   font-family: Martel;
 }
 
 
-.psmeap_contain,
-.pdp_contain,
-.gourm-sucre_contain {
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 50px;
-}
-
 .price_psmeap,
 .price_pdp
  {
-  flex-direction: column;
-  text-align: right;
-  min-width: 100px;
-  max-width: 150px;
-  padding-right: 40px;
+ display: none;
   
 }
 
-.psmeap_contain .price_psmeap {
-  justify-content: flex-end;
-}
 
-.flex_psmeap,
-.flex_pdp {
-  flex-direction: row;
-  justify-content: space-between;
-}
 
 .title_menu_cf {
-  font-size: 2.1em;
+  font-size: 1em;
   background: -webkit-linear-gradient(0.40turn ,#8F5BFE, #C67412);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -458,44 +508,25 @@ h2,h3,h4,.fas.fa-music,.ne_final {
   background-color: #EDEFEF;
   color: black ;
   padding: 50px 20px 50px 20px;
-  font-size: 0.5em;
+  font-size: 1em;
   font-family: Kalam;
 }
 
 
-.pbc_contain,
-.pbct_contain,
-.pbt_contain {
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 50px;
-}
-
 .price_pbc,
 .price_pbct,
 .price_pbt {
-  flex-direction: column;
-  text-align: right;
-  min-width: 100px;
-  max-width: 150px;
-  padding-right: 50px;
+  display: none;
   
 }
 
-.pbc_contain .price_pbc {
-  justify-content: flex-end;
-}
 
-.flex_pbc,
-.flex_pbct,
-.flex_pbt {
-  flex-direction: row;
-  justify-content: space-between;
-}
+
+
 
 .title_menu_ddp {
   font-family: GreatVibes;
-  font-size: 3em;
+  font-size: 1em;
   background: -webkit-linear-gradient(0.40turn,#0889FB, #022DDF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -512,47 +543,27 @@ h2,h3,h4,.fas.fa-music,.ne_final {
   background-color: #FDFFFD;
   color: black ;
   padding: 50px 20px 50px 20px;
-  font-size: 0.5em;
+  font-size: 1em;
   font-family: Kalam;
 }
 
 
-
-.esquisse_contain,
-.oeuvredm_contain,
-.sommetdelart_contain {
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 20px;
-}
-
 .price_esquisse,
 .price_oeuvredm,
 .price_sommetdelart {
-  flex-direction: column;
-  text-align: right;
-  min-width: 50px;
-  max-width: 100px;
-  padding-right: 20px;
+  display: none;
   
 }
 
-.esquisse_contain .price_esquisse,
-.oeuvredm_contain .price_oeuvredm,
-.sommetdelart_contain .price_sommetdelart {
-  justify-content: flex-end;
-}
 
-.flex_esquisse,
-.flex_oeuvredm,
-.flex_sommetdelart {
-  flex-direction: row;
-  justify-content: space-between;
-}
+
+
+
+
 
 .title_menu_pg {
   font-family: KaushanScript;
-  font-size: 3em;
+  font-size: 1em;
   background: -webkit-linear-gradient(0.4turn,#BEFF7F, #41963C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -581,13 +592,14 @@ h2,h3,h4,.fas.fa-music,.ne_final {
 }
 
 
-
-/*Animation Wiggle & Bounce*/
+/*...........................................................................................................*/
+                                      /*Animation Wiggle & Bounce*/
+/*...........................................................................................................*/
 
 
 @keyframes wiggle {
-  20%  { transform: translateX(15px);  }
-  40%  { transform: translateX(-15px); }
+  20%  { transform: translateX(20px);  }
+  40%  { transform: translateX(-20px); }
   60%  { transform: translateX(10px);  }
   80%  { transform: translateX(-10px); }
   100% { transform: translateX(0);     }
@@ -595,7 +607,7 @@ h2,h3,h4,.fas.fa-music,.ne_final {
 
 @keyframes bounce {
   50%  { transform: translateY(10px);  }
-  100% { transform: translateY(0px);     }
+  100% { transform: translateY(0px);   }
 }
 
 
