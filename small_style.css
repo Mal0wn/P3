@@ -324,8 +324,10 @@ justify-content: space-around;
 .sommetdelart_contain {
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
+  margin: auto;
 }
 
 
@@ -391,6 +393,7 @@ body {
 .flex_sommetdelart {
   align-items: center;
   padding: 0px, 10px, 0px, 10px;
+  text-align: center;
 }
 
 .title_pointdorgue,
