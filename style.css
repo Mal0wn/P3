@@ -411,6 +411,7 @@ h2,h3,h4,.fas.fa-music,.ne_final {
   padding: 50px 20px 50px 20px;
   font-size:0.5em;
   font-family: Martel;
+  flex-direction: column;
 }
 
 
