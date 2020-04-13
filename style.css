@@ -261,6 +261,9 @@ justify-content: space-around; }
   margin:auto;
   flex-direction: column;
   padding-bottom: 50px;
+  font-size: 0.5em;
+  padding-left: 10px;
+  padding-right: 10px
 }
 
 .container-dots span {
