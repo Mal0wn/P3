@@ -5,89 +5,63 @@
     src:url('./web_fonts/Montserrat-Bold.ttf') format('truetype');     
     font-weight: normal;
     font-style: normal;
-
 }
-
 @font-face {
     font-family: 'Devonshire';
-    src:url('./web_fonts/Devonshire-Regular.ttf') format('truetype');
-         
+    src:url('./web_fonts/Devonshire-Regular.ttf') format('truetype');    
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'Allan';
-    src:url('./web_fonts/Allan-Regular.ttf') format('truetype');
-         
+    src:url('./web_fonts/Allan-Regular.ttf') format('truetype');     
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'Notoserif';
-    src:url('./web_fonts/Notoserif-Bold.ttf') format('truetype');
-         
+    src:url('./web_fonts/Notoserif-Bold.ttf') format('truetype');     
     font-weight: normal;
     font-style: normal;
-
 }
-
 @font-face {
     font-family: 'Itim';
-    src:url('./web_fonts/Itim-Regular.ttf') format('truetype');
-         
+    src:url('./web_fonts/Itim-Regular.ttf') format('truetype');    
     font-weight: normal;
     font-style: normal;
-
 }
-
 @font-face {
     font-family: 'Martel';
-    src:url('./web_fonts/Martel-Regular.ttf') format('truetype');
-         
+    src:url('./web_fonts/Martel-Regular.ttf') format('truetype');    
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'CroissantOne';
-    src:url('./web_fonts/CroissantOne-Regular.ttf') format('truetype');
-    
-         
+    src:url('./web_fonts/CroissantOne-Regular.ttf') format('truetype');    
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'DancingScript';
-    src:url('./web_fonts/DancingScript-Regular.ttf') format('truetype');
-         
+    src:url('./web_fonts/DancingScript-Regular.ttf') format('truetype');    
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'Kalam';
-    src:url('./web_fonts/Kalam-Regular.ttf') format('truetype');
-         
+    src:url('./web_fonts/Kalam-Regular.ttf') format('truetype');     
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'KaushanScript';
-    src:url('./web_fonts/KaushanScript-Regular.ttf') format('truetype');
-         
+    src:url('./web_fonts/KaushanScript-Regular.ttf') format('truetype');    
     font-weight: normal;
     font-style: normal;
-
 }
-
-
 /*-----------------------------------------------------------------------------------------------------------------------*/ 
 /*-----------------------------------------------Flexbox-----------------------------------------------------------------*/
-
 body,
 .header,
 .main_container,
@@ -150,48 +124,46 @@ span,
 .scale_mdpp,
 .scale_mpdd,
 h3,
+h1,
 .logo_ohmyfood,
-.menu_index
+.menu_index,
+.title_top
  {
     display: flex;
 }
-
-
 /*-----------------------------------------------------------------------------------------------------------------------*/ 
 /*-----------------------------------------------------Header------------------------------------------------------------*/
-
 .navlogo {
-   margin: auto;
-   background-position: center;
-   justify-content: center;
-   padding-top: 20px;
-   padding-bottom: 15px;
-   }
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  height: 100%;
+}
 .header {
      background-color: #579C87 ;
-     max-height: 100px;
-     max-width: 1000px;
-     min-width: 375px;
+     max-height: 75px;
+     width: 900px;
+     
 }
 h1 a {
-	background-color: #579C87 ;
-    color:#FDCB46 ;
+	  color:#FDCB46 ;
     text-decoration: none;
     font-style: bold; 
     font-size: 100%;
    	text-align: center;
+    justify-content: center;
+    width: 100%;
 }
-
 /*-----------------------------------------------------------------------------------------------------------------------*/ 
 /*-----------------------------------------------Footer-/- Button--------------------------------------------------------*/
-
 .btn_foot {
     background-color: #579C87 ;
     color:#FDCB46 ;
     text-decoration: none; 
 }
 .footer {
-    max-width: 1000px;
+    max-width:900px;
     min-width: 375px;
     width: 100%;
     background-color:#579C87;
@@ -210,7 +182,6 @@ h1 a {
     min-width: 250px;
     height:50px; 
 }
-
 .soon {
     justify-content: center; 
 }
@@ -230,18 +201,13 @@ h1 a {
   line-height: -1px;
   font-size: 1.5em;
 }
-
-
-
 /*----------------------------------------------------------------------------------------------*/ 
 /*-----------------------------------Anim Footer/BTN_SOON---------------------------------------*/
-
 /*Transition btn "prochainement"--> "..."*/
 .text-base{
    opacity:1;
    justify-content: center;
 }
-
 .text-hover{
    display:none;
    width: 100%;
@@ -250,12 +216,10 @@ h1 a {
 }
 .btn_soon:hover .text-hover {
     display:block;
-
 }
 .btn_soon:hover .text-base {
     display:none;
 }
-
 @keyframes bounce {
   50%  { transform: translateY(10px);  }
   100% { transform: translateY(0px);     }
@@ -264,7 +228,6 @@ h1 a {
   animation: bounce 1s ease;
   animation-iteration-count: infinite;
 }
-
 .dot2{
   animation: bounce 1s ease;
   animation-iteration-count: infinite;
@@ -275,9 +238,7 @@ h1 a {
   animation-iteration-count: infinite;
   animation-delay: 0.3s;
 }
-
 /*Transition btn footer*/
-
 @keyframes wiggle {
   20%  { transform: translateX(15px);  }
   40%  { transform: translateX(-15px); }
@@ -289,37 +250,27 @@ h1 a {
   animation: wiggle 0.2s ease;
   animation-iteration-count: 1;
 }
-
-
-
-
 /*-------------------------------------------------------------------------------------------------------------*/ 
 /*-----------------------------------------------Index--------------------------------------------------------*/
 html {
 	font-size: 100%;
 }
-
 body {
     font-family: "Montserrat";
     flex-direction: column;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 900px;
     min-width: 375px;
     margin: auto;
     }
-
-
 .main_container {
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 900px;
   min-width: 375px;
   padding-bottom: 150px;
   width: 100%;
+
 }
-
-
-
-
 /*-------------Menus-----------*/
 .main_container .pic_top {
 	padding-top: 40px;
@@ -331,55 +282,49 @@ body {
   justify-content: space-around;
   width: 100%;
 }
-.pic_top .scale_mne , .pic_top .scale_mcf ,
-.pic_bottom .scale_mdpp , .pic_bottom .scale_mpdd {
+.pic_top, .pic_bottom{
   width: 100%;
-  max-width: 400px;
-  min-width: 150px;
 }
+
+.scale_mne, .scale_mcf, .scale_mdpp, .scale_mpdd{
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.1) inset;
+  
+  border-radius: 10px;
+  justify-content: center;
+  flex-direction: column;
+  width: 275px;
+  height: 400px;
+}
+
+.scale_mcf .title_menu_cf {
+  font-size:1em;
+}
+
 .scale_mne {
-  margin-left: 10px;
-  margin-right: 10px;
+  
   background-color: #FCDFDB;
-  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.1) inset;
-  padding:200px 25px 175px 25px;
-  border-radius: 10px;
-  justify-content: center;
-
-}
-.scale_mcf {
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #FFF5FE;
-  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.1) inset;
-  padding:200px 25px 175px 25px;
-  border-radius: 10px;
-  justify-content: center;
-}
-.scale_mdpp{
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #EDEFEF;
-  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.1) inset;
-  padding:200px 25px 175px 25px;
-  border-radius: 10px;
-  justify-content: center;
-}
-.scale_mpdd{ 
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #FDFFFD;
-  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.1) inset;
-  padding:200px 25px 175px 25px;
-  border-radius: 10px;
-  justify-content: center;
-}
-
-a {
-  text-decoration: none;
   
 }
-
+.scale_mcf {
+ 
+  background-color: #FFF5FE;
+  
+}
+.scale_mdpp{
+  
+  background-color: #EDEFEF;
+ 
+}
+.scale_mpdd{ 
+ 
+  background-color: #FDFFFD;
+  
+}
+a {
+  text-decoration: none;
+ }
 .fas.fa-music {
   background: -webkit-linear-gradient( 0.40turn,#F05160, #F6916A);
   -webkit-background-clip: text;
@@ -432,28 +377,121 @@ a {
 h3 {
   justify-content: center;
 }
-
-
-
-
-
-
-
-.deco {
-  max-width: 300px;
-  min-width: 50px;
-  width: 50%;
+/*...........................................................................................................*/
+                                       /*Anim Zoom menu*/
+/*...........................................................................................................*/
+ 
+.scale_mne, .scale_mcf, .scale_mdpp, .scale_mpdd {
+  overflow: hidden;
+  position: relative;
 }
 
 
+.scale_mne:hover, .scale_mcf:hover, .scale_mdpp:hover, .scale_mpdd:hover  {
+    -moz-transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    transform: scale(1.09);
+    opacity: 0.5;
+  }
+/*-------------------------------------------------------------------------------------------------------------*/ 
+/*--------------------------------------Mentions Légales--------------------------------------------------------*/
+.mentions {
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+.mentions_title {
+  justify-content: center;
+  color:#579C87 ;
+}
 
 
-
-
-
-
-
-
+/*-------------------------------------------------------------------------------------------------------------*/ 
+/*------------------------------------------------Menu---------------------------------------------------------*/
+.deco {
+  max-width: 200px;
+  min-width: 50px;
+  width: 100%;
+  height: auto;
+}
 .pricesmart {
   display: none;
 }
+.menulanote , .menulapalette, .menulechic, .menuledelice {
+  flex-direction: column;
+  width: 800px;
+  
+  font-size: 1.6em;
+  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 10px;
+  
+  margin:auto;
+  justify-content: center;
+ 
+}
+
+.title_top {
+  justify-content: center;
+}
+
+
+.menulanote {
+  background-color: #FCDFDB;
+  color: #3D1319;
+  padding: 50px 20px 50px 20px;
+  font-family: Itim;
+  
+  
+}
+
+h2,h3,h4,.fas.fa-music,.ne_final {
+  text-align: center;
+}
+
+.prelude_contain,
+.pointdorgue_contain,
+.mouvmtfinal_contain {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 50px;
+  font-size: 0.8em;
+}
+
+.price_prelude,
+.price_pointdorgue {
+  flex-direction: column;
+  text-align: right;
+  min-width: 100px;
+  max-width: 150px;
+  padding-right: 40px;
+  
+}
+
+.prelude_contain .price_prelude {
+  justify-content: flex-end;
+}
+
+.flex_prelude,
+.flex_pointdorgue {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fas.fa-music {
+  font-size: 3em;
+  background: -webkit-linear-gradient( 0.40turn,#F05160, #F6916A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ne_final .fas.fa-music {
+ 
+}
+
+.ne_final {
+  padding-top: 30px;
+
+}
+
