@@ -350,12 +350,16 @@ a {
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
-.title_menu_pg {
+ .title_menu_pg {
   font-family: KaushanScript;
   text-align: center;
   background: -webkit-linear-gradient(0.4turn,#BEFF7F, #41963C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.scalempdd .title_menu_pg {
+  font-size: 1em;
 }
 .menune{
   font-family: Allan;
@@ -514,7 +518,7 @@ p {
   font-size: 0.9em;
 }
 
-.title_menu_pg {
+.contain_menu .title_menu_pg {
   font-size: 3em;
 }
 
@@ -603,4 +607,23 @@ p {
   width: 100%;
   text-align: center;
 }
+.flex_psmeap,
+.flex_pdp,
+.gourm-sucre_contain,
+.flex_pbc,
+.flex_pbct,
+.flex_pbt,
+.flex_esquisse,
+.flex_oeuvredm,
+.flex_sommetdelart {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.menulapalette .contain_menu,
+.menuledelice .contain_menu,
+.menulechic .contain_menu {
+  width: 95%;
+}
+
 
