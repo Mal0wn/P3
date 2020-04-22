@@ -1,7 +1,7 @@
 body {
     
   max-width: 1024px;
-  min-width: 600px;
+  min-width: 550px;
   width: 100%;
   font-size: 1.5em; 
 }
@@ -12,7 +12,8 @@ body {
 .menulanote, .menulapalette, .menulechic, .menuledelice {
 	min-width: 600px;
 	max-width: 800px;
-	width: 100%;
+	width: 85%;
+	margin: auto;
 }
 .price_prelude,
 .price_psmeap,
@@ -46,6 +47,7 @@ body {
 .contain_menu {
 	text-align: center;
 	font-size: 0.8em;
+
 }
 h3 span {
 	padding-left: 20px;
@@ -70,6 +72,10 @@ h3 span {
 }
 .contain_menu .title_menu_pg {
 	font-size: 1.8em;
+}
+
+.flex_pbt {
+	justify-content: center;
 }
 
 @media screen and (min-width: 900px) and (max-width: 1024px)
