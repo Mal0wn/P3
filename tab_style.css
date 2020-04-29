@@ -1,9 +1,9 @@
 body {
-    
-  max-width: 1024px;
-  min-width: 550px;
-  width: 100%;
-  font-size: 1.5em; 
+	
+	max-width: 1024px;
+	min-width: 550px;
+	width: 100%;
+	font-size: 1.5em; 
 }
 .scale_mne, .scale_mcf, .scale_mdpp, .scale_mpdd {
 	width: 300px;
@@ -80,11 +80,11 @@ h3 span {
 
 @media screen and (min-width: 900px) and (max-width: 1024px)
 {
-  .scale_mne, .scale_mcf, .scale_mdpp, .scale_mpdd {
-	width:350px;
-	height: 500px;
-}
-body {
-	font-size:1.8em;
-}
+	.scale_mne, .scale_mcf, .scale_mdpp, .scale_mpdd {
+		width:350px;
+		height: 500px;
+	}
+	body {
+		font-size:1.8em;
+	}
 }

@@ -4,11 +4,11 @@ html {
 }
 
 body {
-    
-  max-width: 759px;
-  min-width: 320px;
-  width: 100%;
-  font-size: 0.8em; 
+
+	max-width: 759px;
+	min-width: 320px;
+	width: 100%;
+	font-size: 0.8em; 
 }
 .scale_mne, .scale_mcf, .scale_mdpp, .scale_mpdd {
 	width: 250px;
@@ -28,9 +28,8 @@ body {
 	max-width: 600px;
 	width: 80%;
 	margin: auto;
-    padding: 20px 0px 20px 0px;
+	padding: 20px 0px 20px 0px;
 	justify-content: center;
-	
 }
 
 .menulanote{
